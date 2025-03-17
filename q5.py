@@ -22,9 +22,9 @@ days = []
 
 for data in year_date:
     split_data = data.split('-')
-    years.append((split_data[0]))
-    months.append((split_data[1]))
-    days.append((split_data[2]))
+    years.append(int(split_data[0]))
+    months.append(int(split_data[1]))
+    days.append(int(split_data[2]))
 
 #시간만 따로 int의 형태로 추출합니다.
 hours = [int(h.split(':')[0]) for h in time]

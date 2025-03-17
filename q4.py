@@ -63,7 +63,7 @@ def outlier_index():
 
 # 3.인덱스를 기반으로 DataFrame 내의 데이터를 제거하고, 제거된 DataFrame을 반환하는 함수를 만듭니다.
 def remove_outlier(dataframe, list_idx):
-    return dataframe.drop(index=list_idx, axis=0, errors='ignore')
+    return dataframe.drop(list_idx)
 
 # del_missing 함수로 결측치를 처리하여 df에 저장합니다.
 df = del_missing(df)
