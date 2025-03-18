@@ -53,7 +53,7 @@ def outlier_index():
         # 같은 데이터의 인덱스를 idx_zero_distance에 저장합니다.
         # x와 _x가, y가 y_y와 같을 때 해당하는 인덱스 i를 idx_zero_distance에 append하세요.
         if (x == _x) and (y == _y):
-            idx_zero_distance.append(i)
+            idx_zero_distance.append(passenger_count.index[i])
     
     # 제거해야하는 인덱스의 리스트들(idx_fare_amount,idx_passenger_count,idx_zero_distance)
     # 간의 중복을 없앤 리스트를 만들어줍니다.
